@@ -1,0 +1,150 @@
+●	¿Qué es GitHub?
+
+    GitHub es un centro de desarrollo en el que developers pueden subir contendio, utiliza git para manejar versiones y creacion de 
+    repositorios, proporciona mutiples funciones muy utiles para el desarrollo de aplicaciones, ademas de permitar a desarrolladores 
+    compartir su codigo de manera rapida y simple.
+
+●	¿Cómo crear un repositorio en GitHub? 
+
+    Para crear un repositorio hacer falta seguir una serie de pasos simples
+
+    1.Dirigirse a la pagina de github y crear un nuevo repositorio con el nombre deseado
+
+    2.Copiar la url del repositorio recien creado
+
+    3.Crear una capeta en donde se quiera tener el proyecto o contenido
+
+    4.Abrir dicha carpeta en un cmd o visual studio
+
+    5.usar la siguiente seguidilla de comandos:
+
+    git init  (inicializa el repositorio dentro de la carpeta)
+
+    git add . (añade todos los elementos presentes en la carpeta a las lista de commit, si no tiene nada en la carpeta añade un simple readme.txt)
+
+    git commit -m"Mensaje" (confirma que estas seguro de los nuevos cambios que quieres subir al repositorio, si es el primer commit, puedes poner
+                            algo como "Primer commit" o "Primer commit del proyecto {nombre del proyecto})
+    git remote add origin {link de tu repositorio}
+
+    git push origin main
+
+    A partir de ahora puedes trabajar tu proyecto en esa carpeta
+
+●	¿Cómo crear una rama en Git?
+
+    Existen dos maneras de crear una nueva rama:
+
+    git checkout -b nombreDeBranch (Crear nueva branch y moverse a dicha branch)
+    git branch nombreDeBranch (Crear nueva branch)
+
+●	¿Cómo cambiar a una rama en Git?
+
+    Se usa git checkout nombreDeBranch
+
+    Si no estas seguro de donde estas parado, usa git status
+
+●	¿Cómo fusionar ramas en Git?
+
+    Supongamos que tenemos las branches A y B, A es la branch principal del
+    proyecto, cuando ejecutemos el comando, se eliminara B y todos sus cambios seran movidos a A, 
+    suponiendo que se tenga ningun conflicto, hace falta tener cuidado al ejecutar esto, puede ser
+    dificil recuperar un estado anterior.
+
+    Se usa git merge nombreDeBranchB
+
+●	¿Cómo crear un commit en Git?
+
+    Usamos la siguiete seguidilla de comandos:
+
+    git add . (Añade todos los cambios realizados a la lista de commit)
+
+    git commit -m"Mensaje" (Confirma todos los cambios y los prepara para ser subidos al repositorio, en el parametro "mensaje" es recomendable
+                            poner todos los cambios realizados de manera resumida, de este modo a simple vista se puede rastrear mejor cuando y 
+                            quien hizo un cambio)
+
+●	¿Cómo enviar un commit a GitHub?
+
+    Se utiliza git push origin main
+
+●	¿Qué es un repositorio remoto?
+
+    Un repositorio remoto es en terminos simples, una carpeta subida al servidor de github en donde se guarde todo el codigo o contenido subido
+    por el usuario.
+
+●	¿Cómo agregar un repositorio remoto a Git? 
+
+    Primero hace falta crear un nuevo repositorio en github, despues, es tan simple como copiar el link del repositorio y ejecutar el siguiente
+    comando: 
+
+    git remote add origin {link de tu repositorio}
+
+●	¿Cómo empujar cambios a un repositorio remoto?
+
+    Se utiliza git push origin main
+
+●	¿Cómo tirar de cambios de un repositorio remoto?
+
+    Usando git pull, es recomendable hacer un pull siempre que se este por trabajar en el proyecto.
+
+●	¿Qué es un historial de Git? 
+
+    El historial de git es una herramienta que nos permite ver el historial de commit de un proyecto, esta herramienta es sumamente util
+    para poder rastrear cambios hechos hace tiempo o saber que cambios fueron lo que causaron que algo se rompiera.
+
+●	¿Cómo ver el historial de Git? 
+
+    Se usa git log, tambien se le pueden colocar muchas opciones para modificar como se ve el contenido como por ejemplo -p,-2 o --pretty
+
+●	¿Cómo buscar en el historial de Git? 
+    Existen varias opciones que te permite delimitar el rango de busqueda, estan --since y --until que permiter delimitar un rango de tiempo,
+    -- author, permite buscar por un autor en particular y --grep busca una palabra clave
+●	¿Cómo borrar el historial de Git? 
+●	¿Qué es un repositorio privado en GitHub? 
+
+    En exactamente lo mismo que un repositorio remoto comun, la unica diferencia es que solo el usuario que lo creo y sus colaboradores pueden 
+    acceder a el.
+
+●	¿Cómo crear un repositorio privado en GitHub? 
+
+    No dirijimos a la pagina de github y creamos un nueva repositorio, una de las opciones durante la creacion define si el repo es publico o
+    privado, tambien se puede cambiar su nivel de privacidad una vez creado.
+
+●	¿Cómo invitar a alguien a un repositorio privado en GitHub? 
+
+    Dentro del repositorio nos vamos a opciones, dentro de la seccion "access", selecionamos colaboradores, desde esta pestaña se pueden añadir
+    colaboradores a traves de email o nombre de usuario.
+
+●	¿Qué es un repositorio público en GitHub?
+
+    Un repositorio publico es un repositorio al que todo el mundo puede acceder, esto incluye ver todo el contenido y clonar el repositorio, descargarlo
+    y hacer pull request.
+
+●	¿Cómo crear un repositorio público en GitHub? 
+
+    Nos vamos a la pagina de git hub y cremaos un nuevo repositorio, dentro de las opciones podemos elegir si el repo es publico o privado, por
+    defecto todos los repos son publicos, tambien se pueden cambiar las opciones de privacidad con el repo ya creado.
+
+●	¿Cómo compartir un repositorio público en GitHub? 
+
+    Es tan simple de como copiar el link y pasarselo a la persona pertinente.
+
+
+
+●	Crear un repositorio. 
+○	Dale un nombre al repositorio. 
+○	Elije el repositorio sea público. 
+○	Inicializa el repositorio con un archivo.
+
+    Comandos utilizados:
+     
+
+●	Agregando un Archivo 
+○	Crea un archivo simple, por ejemplo, "mi-archivo.txt". 
+○	Realiza los comandos git add . y git commit -m "Agregando mi-archivo.txt" en la línea de comandos. 
+○	Sube los cambios al repositorio en GitHub con git push origin main (o el nombre de la rama correspondiente). 
+
+●	Creando Branchs
+○	Crear una Branch 
+○	Realizar cambios o agregar un archivo
+○	Subir la Branch 
+
