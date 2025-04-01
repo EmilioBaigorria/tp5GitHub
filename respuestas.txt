@@ -107,7 +107,7 @@
 ●	¿Cómo crear un repositorio privado en GitHub? 
 
     No dirijimos a la pagina de github y creamos un nueva repositorio, una de las opciones durante la creacion define si el repo es publico o
-    privado, tambien se puede cambiar su nivel de privacidad una vez creado.
+    privado, tambien se puede cambiar su nivel de privacidad una vez creado,despues usamos los comandos del punto 5.
 
 ●	¿Cómo invitar a alguien a un repositorio privado en GitHub? 
 
@@ -122,7 +122,8 @@
 ●	¿Cómo crear un repositorio público en GitHub? 
 
     Nos vamos a la pagina de git hub y cremaos un nuevo repositorio, dentro de las opciones podemos elegir si el repo es publico o privado, por
-    defecto todos los repos son publicos, tambien se pueden cambiar las opciones de privacidad con el repo ya creado.
+    defecto todos los repos son publicos, tambien se pueden cambiar las opciones de privacidad con el repo ya creado, despues usamos los comandos
+    del punto 5.
 
 ●	¿Cómo compartir un repositorio público en GitHub? 
 
@@ -136,12 +137,18 @@
 ○	Inicializa el repositorio con un archivo.
 
     Comandos utilizados:
-     
+
+    git init
+    git add .
+    git commit -m"primer commit"
+    git remote add origin https://github.com/EmilioBaigorria/tp5GitHub
+    git push origin main
 
 ●	Agregando un Archivo 
 ○	Crea un archivo simple, por ejemplo, "mi-archivo.txt". 
 ○	Realiza los comandos git add . y git commit -m "Agregando mi-archivo.txt" en la línea de comandos. 
-○	Sube los cambios al repositorio en GitHub con git push origin main (o el nombre de la rama correspondiente). 
+○	Sube los cambios al repositorio en GitHub con git push origin main (o el nombre de la rama correspondiente).
+    Comandos utilizados: 
 
 ●	Creando Branchs
 ○	Crear una Branch 
